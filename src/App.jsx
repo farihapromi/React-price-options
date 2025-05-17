@@ -2,12 +2,18 @@ import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
+<<<<<<< HEAD
+=======
+import DaisyNav from './components/DaisyNavBar/DaisyNav'
+import Navbar from './components/Navbar/Navbar'
+>>>>>>> recover-ui
 
 function App() {
   const [count, setCount] = useState(0)
 
   return (
     <>
+<<<<<<< HEAD
       <div className="stats shadow">
   <div className="stat">
     <div className="stat-figure text-primary">
@@ -60,6 +66,11 @@ function App() {
     <div className="stat-desc text-secondary">31 tasks remaining</div>
   </div>
 </div>
+=======
+    {/* <DaisyNav/> */}
+    <Navbar/>
+  
+>>>>>>> recover-ui
     </>
   )
 }
