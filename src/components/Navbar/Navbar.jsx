@@ -1,4 +1,6 @@
+import { list } from 'postcss';
 import React from 'react'
+import Links from '../Links/Links';
 
 const Navbar = () => {
   const routes = [
@@ -11,7 +13,11 @@ const Navbar = () => {
 
   return (
     <nav>
-        
+        <ul className='md:flex'>
+            {
+                routes.map(route=><Links key={route.id} route={route}></Links>)
+            }
+        </ul>
     </nav>
   )
 }
