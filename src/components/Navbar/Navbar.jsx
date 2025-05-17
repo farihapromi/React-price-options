@@ -16,7 +16,7 @@ const Navbar = () => {
 ];
 
   return (
-    <nav>
+    <nav className='text-black p-6 bg-yellow-200'>
         <div  className='md:hidden text-2xl'onClick={()=>setMenuOpen(!menuOpen)}>
 
             {
@@ -29,7 +29,9 @@ const Navbar = () => {
 
         </div>
        
-        <ul className='md:flex'>
+        <ul className={`md:flex absolute
+        ${menuOpen?'':'hidden'}
+             bg-yellow-200 px-6 shadow-lg`}>
             {
                 routes.map(route=><Links key={route.id} route={route}></Links>)
             }
