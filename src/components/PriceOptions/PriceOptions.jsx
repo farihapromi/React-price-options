@@ -1,4 +1,5 @@
 import React from 'react'
+import PricieOption from '../PriceOption/PricieOption'
 
 const PriceOptions = () => {
   const priceOptions=[
@@ -53,6 +54,10 @@ const PriceOptions = () => {
 
   return (
     <div>
+      <h2 className="text-3xl">Best Prices for gym</h2>
+      {
+        priceOptions.map(option=><PricieOption key={option.id} option={option}/>)
+      }
       
     </div>
   )
