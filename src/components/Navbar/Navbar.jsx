@@ -16,7 +16,7 @@ const Navbar = () => {
 ];
 
   return (
-    <nav className='text-black p-6 bg-yellow-200'>
+    <nav className='text-black p-6 bg-blue-200'>
         <div  className='md:hidden text-2xl'onClick={()=>setMenuOpen(!menuOpen)}>
 
             {
@@ -31,7 +31,7 @@ const Navbar = () => {
        
         <ul className={`md:flex absolute  md:static duration-1000
         ${menuOpen?'top-16':'-top-60'}
-             bg-yellow-200 px-6 `}>
+              `}>
             {
                 routes.map(route=><Links key={route.id} route={route}></Links>)
             }

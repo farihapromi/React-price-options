@@ -2,7 +2,7 @@ import React from 'react'
 
 
 
-import { LineChart as LC, Line } from 'recharts';
+import { LineChart as LC, Line,XAxis, YAxis  } from 'recharts';
 
 const LineChart = () => {
     const subMarks=[
@@ -21,7 +21,9 @@ const LineChart = () => {
 
   return (
     <div>
-        <LC height={400} width={500} data={subMarks}>
+        <LC height={600} width={800} data={subMarks}>
+             <XAxis dataKey="name" />
+    <YAxis />
             <Line dataKey="math" stroke='red' />
              <Line dataKey="physics" stroke='green'  />
               <Line dataKey="chemistry"  stroke='blue' />
