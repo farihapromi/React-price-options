@@ -1,6 +1,7 @@
-import { list } from 'postcss';
+
 import React from 'react'
 import Links from '../Links/Links';
+import { IoMdMenu } from "react-icons/io";
 
 const Navbar = () => {
   const routes = [
@@ -13,6 +14,7 @@ const Navbar = () => {
 
   return (
     <nav>
+        <IoMdMenu className='text-2xl md:hidden'/>
         <ul className='md:flex'>
             {
                 routes.map(route=><Links key={route.id} route={route}></Links>)
